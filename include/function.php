@@ -35,4 +35,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo json_encode($response);
     exit;
 }
+
+function fetchData() {
+    include './conection.php';
+
+    // Enable error reporting
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
+    header('Content-Type: application/json');
+
+    $sql = "SELECT client_name AS clientname, client_address AS clientaddress, whatsapp_number AS whatsappnumber, mobile_number AS mobilenumber, notes AS Notes, category FROM general";
+    $result = $conn->query($sql);
+
+    $data = array();
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $data[] = $row;
+        }
+    }
+
+    echo json_encode(['data' => $data]);
+
+    $conn->close();
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    fetchData();
+}
 ?>

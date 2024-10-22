@@ -2,142 +2,127 @@
 <html>
   <head>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
   </head>
   <body>
-    <section class="hero is-primary is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title" style="text-align: center;">જનરલ ક્રમાંક ચાર્ટ</h1>
-        </div>
+    <section class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">જનરલ ક્રમાંક ચાર્ટ</h1>
       </div>
     </section>
-    <form id="form" class="container m-4 pl-4" method="POST">
-      <div class="field">
-        <label class="label">નામ</label>
-        <div class="control">
-          <input
-            class="input"
-            type="text"
-            placeholder="નામ"
-            name="clientname"
-          />
-        </div>
+    <form id="form" class="container my-4" method="POST">
+      <div class="mb-3">
+        <label class="form-label">નામ</label>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="નામ"
+          name="clientname"
+        />
       </div>
 
-      <div class="field">
-        <label class="label">સરનામુ</label>
-        <div class="control">
-          <input
-            class="input"
-            type="text"
-            placeholder="સરનામુ"
-            name="clientaddress"
-          />
-        </div>
+      <div class="mb-3">
+        <label class="form-label">સરનામુ</label>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="સરનામુ"
+          name="clientaddress"
+        />
       </div>
 
-      <div class="field">
-        <label class="label">વોટસપ નં</label>
-        <div class="control">
-          <input
-            class="input"
-            type="text"
-            placeholder="વોટસપ નં"
-            name="whatsappnumber"
-          />
-        </div>
+      <div class="mb-3">
+        <label class="form-label">વોટસપ નં</label>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="વોટસપ નં"
+          name="whatsappnumber"
+        />
       </div>
 
-      <div class="field">
-        <label class="label">મોબાઈલ નં</label>
-        <div class="control">
-          <input
-            class="input"
-            type="text"
-            placeholder="મોબાઈલ નં"
-            name="mobilenumber"
-          />
-        </div>
+      <div class="mb-3">
+        <label class="form-label">મોબાઈલ નં</label>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="મોબાઈલ નં"
+          name="mobilenumber"
+        />
       </div>
 
-      <div class="field">
-        <label class="label">નોંધ</label>
-        <div class="control">
-          <textarea
-            class="textarea"
-            placeholder="નોંધ"
-            name="Notes"
-          ></textarea>
-        </div>
+      <div class="mb-3">
+        <label class="form-label">નોંધ</label>
+        <textarea
+          class="form-control"
+          placeholder="નોંધ"
+          name="Notes"
+        ></textarea>
       </div>
 
       <!-- Hidden input for category -->
       <input type="hidden" name="category" id="category-input">
 
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="ગ્રાહક મિત્રો">
+      <div class="row g-2">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="ગ્રાહક મિત્રો">
             ગ્રાહક મિત્રો
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="મિત્રો">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="મિત્રો">
             મિત્રો
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="સબંધી">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="સબંધી">
             સબંધી
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="સાગમટે">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="સાગમટે">
             સાગમટે
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="કન્દોય">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="કન્દોય">
             કન્દોય
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="વેપારી/ગ્રાહકો">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="વેપારી/ગ્રાહકો">
             વેપારી/ગ્રાહકો
           </button>
         </div>
-   
-      </div>
-      <div class="field is-grouped">
-               <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="ખરીદ વેપારી">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="ખરીદ વેપારી">
             ખરીદ વેપારી
           </button>
         </div>
-        <div class="control"> 
-          <button class="button is-primary submit-button" type="button" data-category="સેલ્સમેન">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="સેલ્સમેન">
             સેલ્સમેન
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="વાહન + મજુર">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="વાહન + મજુર">
             વાહન + મજુર
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="ધાર્મિક + સંસ્થા">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="ધાર્મિક + સંસ્થા">
             ધાર્મિક + સંસ્થા
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="જનરલ">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="જનરલ">
              જનરલ
           </button>
         </div>
-        <div class="control">
-          <button class="button is-primary submit-button" type="button" data-category="અન્ય">
+        <div class="col-6 col-md-2">
+          <button class="btn btn-primary w-100 submit-button" type="button" data-category="અન્ય">
             અન્ય
           </button>
         </div>
@@ -241,5 +226,6 @@
           });
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
