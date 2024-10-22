@@ -108,7 +108,10 @@
             વેપારી/ગ્રાહકો
           </button>
         </div>
-        <div class="control">
+   
+      </div>
+      <div class="field is-grouped">
+               <div class="control">
           <button class="button is-primary submit-button" type="button" data-category="ખરીદ વેપારી">
             ખરીદ વેપારી
           </button>
