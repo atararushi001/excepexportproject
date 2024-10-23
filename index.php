@@ -12,122 +12,137 @@
         <h1 class="display-4">જનરલ ક્રમાંક ચાર્ટ</h1>
       </div>
     </section>
-    <form id="form" class="container my-4" method="POST">
-      <div class="mb-3">
-        <label class="form-label">નામ</label>
-        <input
-          class="form-control"
-          type="text"
-          placeholder="નામ"
-          name="clientname"
-        />
-      </div>
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-md-9">
+          <form id="form" method="POST">
+            <div class="mb-3">
+              <label class="form-label">નામ</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="નામ"
+                name="clientname"
+              />
+            </div>
 
-      <div class="mb-3">
-        <label class="form-label">સરનામુ</label>
-        <input
-          class="form-control"
-          type="text"
-          placeholder="સરનામુ"
-          name="clientaddress"
-        />
-      </div>
+            <div class="mb-3">
+              <label class="form-label">સરનામુ</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="સરનામુ"
+                name="clientaddress"
+              />
+            </div>
 
-      <div class="mb-3">
-        <label class="form-label">વોટસપ નં</label>
-        <input
-          class="form-control"
-          type="text"
-          placeholder="વોટસપ નં"
-          name="whatsappnumber"
-        />
-      </div>
+            <div class="mb-3">
+              <label class="form-label">વોટસપ નં</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="વોટસપ નં"
+                name="whatsappnumber"
+              />
+            </div>
 
-      <div class="mb-3">
-        <label class="form-label">મોબાઈલ નં</label>
-        <input
-          class="form-control"
-          type="text"
-          placeholder="મોબાઈલ નં"
-          name="mobilenumber"
-        />
-      </div>
+            <div class="mb-3">
+              <label class="form-label">મોબાઈલ નં</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="મોબાઈલ નં"
+                name="mobilenumber"
+              />
+            </div>
 
-      <div class="mb-3">
-        <label class="form-label">નોંધ</label>
-        <textarea
-          class="form-control"
-          placeholder="નોંધ"
-          name="Notes"
-        ></textarea>
-      </div>
+            <div class="mb-3">
+              <label class="form-label">નોંધ</label>
+              <textarea
+                class="form-control"
+                placeholder="નોંધ"
+                name="Notes"
+              ></textarea>
+            </div>
 
-      <!-- Hidden input for category -->
-      <input type="hidden" name="category" id="category-input">
+            <!-- Hidden input for category -->
+            <input type="hidden" name="category" id="category-input">
 
-      <div class="row g-2">
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="ગ્રાહક મિત્રો">
-            ગ્રાહક મિત્રો
-          </button>
+            <div class="row g-2">
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="ગ્રાહક મિત્રો">
+                  ગ્રાહક મિત્રો
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="મિત્રો">
+                  મિત્રો
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="સબંધી">
+                  સબંધી
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="સાગમટે">
+                  સાગમટે
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="કન્દોય">
+                  કન્દોય
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="વેપારી/ગ્રાહકો">
+                  વેપારી/ગ્રાહકો
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="ખરીદ વેપારી">
+                  ખરીદ વેપારી
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="સેલ્સમેન">
+                  સેલ્સમેન
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="વાહન + મજુર">
+                  વાહન + મજુર
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="ધાર્મિક + સંસ્થા">
+                  ધાર્મિક + સંસ્થા
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="જનરલ">
+                  જનરલ
+                </button>
+              </div>
+              <div class="col-6 col-md-2">
+                <button class="btn btn-primary w-100 submit-button" type="button" data-category="અન્ય">
+                  અન્ય
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="મિત્રો">
-            મિત્રો
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="સબંધી">
-            સબંધી
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="સાગમટે">
-            સાગમટે
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="કન્દોય">
-            કન્દોય
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="વેપારી/ગ્રાહકો">
-            વેપારી/ગ્રાહકો
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="ખરીદ વેપારી">
-            ખરીદ વેપારી
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="સેલ્સમેન">
-            સેલ્સમેન
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="વાહન + મજુર">
-            વાહન + મજુર
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="ધાર્મિક + સંસ્થા">
-            ધાર્મિક + સંસ્થા
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="જનરલ">
-             જનરલ
-          </button>
-        </div>
-        <div class="col-6 col-md-2">
-          <button class="btn btn-primary w-100 submit-button" type="button" data-category="અન્ય">
-            અન્ય
-          </button>
+        <div class="col-md-3">
+          <div class="button-container">
+            <!-- Button to view all data -->
+            <button class="btn btn-secondary w-100 mt-3" type="button" onclick="window.location.href='cetagory-list-data.php'">
+              View All Data
+            </button>
+          </div>
         </div>
       </div>
-    </form>
+    </div>
+
     <div
       id="message"
       style="

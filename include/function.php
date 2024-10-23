@@ -1,7 +1,23 @@
 <?php
-include './conection.php';
+include 'conection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['action']) && $_POST['action'] == 'delete') {
+        $id = $_POST['id'];
+        $sql = "DELETE FROM general WHERE id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("i", $id);
+        if ($stmt->execute()) {
+            echo json_encode(['status' => 'success', 'message' => 'Record deleted successfully!']);
+        } else {
+            echo json_encode(['status' => 'error', 'message' => 'Failed to delete record.']);
+        }
+        $stmt->close();
+        $conn->close();
+        exit;
+    }
+
+    // Existing code for inserting data
     $clientName = $_POST['clientname'] ?? '';
     $clientAddress = $_POST['clientaddress'] ?? '';
     $whatsappNumber = $_POST['whatsappnumber'] ?? '';
@@ -37,15 +53,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 function fetchData() {
-    include './conection.php';
-
-    // Enable error reporting
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+    include 'conection.php';
 
     header('Content-Type: application/json');
 
-    $sql = "SELECT client_name AS clientname, client_address AS clientaddress, whatsapp_number AS whatsappnumber, mobile_number AS mobilenumber, notes AS Notes, category FROM general";
+    $sql = "SELECT id, client_name AS clientname, client_address AS clientaddress, whatsapp_number AS whatsappnumber, mobile_number AS mobilenumber, notes AS Notes, category FROM general";
     $result = $conn->query($sql);
 
     $data = array();
