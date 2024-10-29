@@ -56,7 +56,9 @@
                 class="form-control"
                 type="text"
                 placeholder="Name"
-                name="clientname" />
+                name="clientname" 
+                required
+                />
             </div>
           </div>
 
@@ -67,7 +69,9 @@
                 class="form-control"
                 type="text"
                 placeholder="city"
-                name="city" />
+                name="city" 
+                required
+                />
             </div>
           </div>
 
@@ -253,7 +257,10 @@
           // Set the hidden input value to the data-category attribute of the clicked button
           document.getElementById("category-input").value = this.getAttribute("data-category");
           // Trigger form submission
-          submitForm();
+          if (validateForm()) {
+            submitForm();
+          }
+         
         });
       });
 
@@ -283,6 +290,7 @@
       }
 
       function submitForm() {
+        
         document.getElementById("message").textContent = "Submitting..";
         document.getElementById("message").style.display = "block";
 
@@ -347,6 +355,14 @@
               button.disabled = false;
             });
           });
+      }
+      function validateForm() {
+        var form = document.getElementById("form");
+        if (form.checkValidity() === false) {
+          form.reportValidity();
+          return false;
+        }
+        return true;
       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
