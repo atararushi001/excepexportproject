@@ -16,6 +16,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conn->close();
         exit;
     }
+    if (isset($_POST['action']) && $_POST['action'] == 'check_duplicate') {
+        $mobileNumber = $_POST['mobilenumber'];
+        if (isDuplicateMobileNumber($mobileNumber, $conn)) {
+            echo json_encode(['status' => 'error', 'message' => 'Duplicate mobile number.']);
+        } else {
+            echo json_encode(['status' => 'success', 'message' => 'Mobile number is unique.']);
+        }
+        $conn->close();
+        exit;
+    }
 
     // Existing code for inserting data
     $clientName = $_POST['clientname'] ?? '';
@@ -73,7 +83,18 @@ function fetchData() {
     $conn->close();
 }
 
+function isDuplicateMobileNumber($mobileNumber, $conn) {
+    $sql = "SELECT COUNT(*) FROM general WHERE mobile_number = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $mobileNumber);
+    $stmt->execute();
+    $stmt->bind_result($count);
+    $stmt->fetch();
+    $stmt->close();
+    return $count > 0;
+}
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     fetchData();
 }
+
 ?>

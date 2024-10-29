@@ -13,21 +13,37 @@
       href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.bootstrap5.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <style>
       .button-container {
         display: flex;
         flex-direction: column;
         gap: 10px;
       }
+   
+    body {
+      background-color: #006ff83b; /* Light goldenrod color */
+    }
+    input{
+      background-color: white;
+    }
+    table{
+      background-color: white;
+      
+    }
     </style>
   </head>
   <body>
-    <section class="bg-primary text-white text-center py-5">
+    <section class="bg-primary text-white text-center py-2">
       <div class="container">
-        <h1 class="display-4">Data Table</h1>
+        <h1 class="display-4" id="header-title">એડ્રેસ બુક</h1>
       </div>
     </section>
-    <div class="container my-4">
+    
+    <div class="p-4 my-4">
       <div class="row">
         <div class="col-md-9">
           <table id="dataTable" class="table table-striped table-bordered" style="width:100%">
@@ -47,48 +63,84 @@
           </table>
         </div>
         <div class="col-md-3">
-          <div class="button-container">
-            <button class="btn btn-secondary w-100 mt-3" type="button" onclick="window.location.href='index.php'">
-             ડેટા ઉમેરો
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="ગ્રાહક મિત્રો">
-              ગ્રાહક મિત્રો
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="મિત્રો">
-              મિત્રો
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="સબંધી">
-              સબંધી
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="સાગમટે">
-              સાગમટે
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="કન્દોય">
-              કન્દોય
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="વેપારી/ગ્રાહકો">
-              વેપારી/ગ્રાહકો
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="ખરીદ વેપારી">
-              ખરીદ વેપારી
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="સેલ્સમેન">
-              સેલ્સમેન
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="વાહન + મજુર">
-              વાહન + મજુર
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="ધાર્મિક + સંસ્થા">
-              ધાર્મિક + સંસ્થા
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="જનરલ">
-              જનરલ
-            </button>
-            <button class="btn btn-primary w-100 submit-button" type="button" data-category="અન્ય">
-              અન્ય
+        <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
+          <div class="col-12">
+            <button class="btn btn-primary w-100" type="button" onclick="window.location.href='index.php'">
+            ડેટા ઉમેરો 
             </button>
           </div>
+          <div class="row g-2">
+            <div class="col-6">
+              <div class="row g-2">
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ગ્રાહક%20મિત્રો'">
+                    ગ્રાહક મિત્રો
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
+                    મિત્રો
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સબંધી'">
+                    સબંધી
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સાગમટે'">
+                    સાગમટે
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કન્દોય'">
+                    કન્દોય
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=વેપારી/ગ્રાહકો'">
+                    વેપારી/ગ્રાહકો
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row g-2">
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ખરીદ%20વેપારી'">
+                    ખરીદ વેપારી
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સેલ્સમેન'">
+                    સેલ્સમેન
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=વાહન%20+%20મજુર'">
+                    વાહન + મજુર
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20+%20સંસ્થા'">
+                    ધાર્મિક + સંસ્થા
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=જનરલ'">
+                    જનરલ
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=અન્ય'">
+                    અન્ય
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
       </div>
     </div>
 
@@ -105,6 +157,16 @@
     <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
     <script>
       $(document).ready(function() {
+        // Extract category from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category');
+        if (category) {
+          $('#category-input').val(category);
+          $('#header-title').text(category);
+        } else {
+          $('#header-title').text('એડ્રેસ બુક');
+        }
+
         var table = $('#dataTable').DataTable({
           "ajax": {
             "url": "./include/function.php",
@@ -119,7 +181,7 @@
             { "data": "category" },
             {
               "data": null,
-              "defaultContent": '<button class="btn btn-sm btn-warning edit-button">Edit</button> <button class="btn btn-sm btn-danger delete-button">Delete</button>'
+              "defaultContent": '<button class="btn btn-sm btn-warning edit-button"><i class="fas fa-edit"></i></button> <button class="btn btn-sm btn-danger delete-button"><i class="fas fa-trash-alt"></i></button>'
             }
           ],
           "dom": 'Bfrtip',
@@ -137,10 +199,6 @@
           function(settings, data, dataIndex) {
             var category = $('#category-input').val();
             var rowCategory = data[5]; // Use data for the category column
-
-            // Debugging: Log the values of category and rowCategory
-            console.log('Category:', category);
-            console.log('Row Category:', rowCategory);
 
             if (category === "" || rowCategory === category) {
               return true;
@@ -178,6 +236,23 @@
             });
           }
         });
+
+        // Click event for mobile number
+        $('#dataTable tbody').on('click', 'td:nth-child(4)', function() {
+          var data = table.row($(this).parents('tr')).data();
+          window.location.href = 'tel:' + data.mobilenumber;
+        });
+
+        // Click event for WhatsApp number
+        $('#dataTable tbody').on('click', 'td:nth-child(3)', function() {
+          var data = table.row($(this).parents('tr')).data();
+          window.location.href = 'tel:' + data.whatsappnumber;
+        });
+
+        // Trigger initial table draw if category is set
+        if (category) {
+          table.draw();
+        }
       });
     </script>
   </body>
