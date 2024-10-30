@@ -145,84 +145,84 @@
           </form>
         </div>
         <div class="col-md-3">
-          <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
-            <div class="col-12">
-              <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php'">
-                view all
-              </button>
-            </div>
-            <div class="row g-2">
-              <div class="col-6">
-                <div class="row g-2">
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ગ્રાહક%20મિત્રો'">
-                      ગ્રાહક મિત્રો
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
-                      મિત્રો
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સબંધી'">
-                      સબંધી
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સાગમટે'">
-                      સાગમટે
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કન્દોય'">
-                      કન્દોય
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=વેપારી/ગ્રાહકો'">
-                      વેપારી/ગ્રાહકો
-                    </button>
-                  </div>
+        <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
+          <div class="col-12">
+            <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php'">
+              view all
+            </button>
+          </div>
+          <div class="row g-2">
+            <div class="col-6">
+              <div class="row g-2">
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=રીટેલર%20કસ્મર'">
+                  રીટેલર કસ્મર
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=હોલસેલ%20કસ્ટમર'">
+                  હોલસેલ કસ્ટમર
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સબંધી'">
+                    સબંધી
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
+                  મિત્રો
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ટ્રાન્સપોર્ટર'">
+                  ટ્રાન્સપોર્ટર
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20+%20સંસ્થા'">
+                  ધાર્મિક સંસ્થા
+                  </button>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="row g-2">
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ખરીદ%20વેપારી'">
-                      ખરીદ વેપારી
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સેલ્સમેન'">
-                      સેલ્સમેન
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=વાહન%20+%20મજુર'">
-                      વાહન + મજુર
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20+%20સંસ્થા'">
-                      ધાર્મિક + સંસ્થા
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=જનરલ'">
-                      જનરલ
-                    </button>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=અન્ય'">
-                      અન્ય
-                    </button>
-                  </div>
+            </div>
+            <div class="col-6">
+              <div class="row g-2">
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ખરીદ%20વેપારી'">
+                    ખરીદ વેપારી
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સેલ્સમેન'">
+                    સેલ્સમેન
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કેટરર્સ'">
+                  કેટરર્સ
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મજુર'">
+                  મજુર
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=બ્રોકર્સ'">
+                  બ્રોકર્સ
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=જનરલ'">
+                  જનરલ  
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
 

@@ -27,7 +27,7 @@
       <div class="col-md-9">
         <form id="form" method="POST">
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">મોબાઈલ નંબર </label>
+            <label class="col-sm-2 col-form-label">1) મોબાઈલ નંબર </label>
             <div class="col-sm-10">
               <input
                 class="form-control"
@@ -39,7 +39,7 @@
           </div>
 
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">વોટસપ નંબર</label>
+            <label class="col-sm-2 col-form-label">2) વોટસપ નંબર</label>
             <div class="col-sm-10">
               <input
                 class="form-control"
@@ -50,7 +50,7 @@
           </div>
 
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">નામ</label>
+            <label class="col-sm-2 col-form-label">3) નામ</label>
             <div class="col-sm-10">
               <input
                 class="form-control"
@@ -63,7 +63,7 @@
           </div>
 
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">ગામ</label>
+            <label class="col-sm-2 col-form-label">4) ગામ</label>
             <div class="col-sm-10">
               <input
                 class="form-control"
@@ -76,7 +76,7 @@
           </div>
 
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">સરનામુ</label>
+            <label class="col-sm-2 col-form-label">5) સરનામુ</label>
             <div class="col-sm-10">
               <input
                 class="form-control"
@@ -89,7 +89,7 @@
 
 
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">નોંધ</label>
+            <label class="col-sm-2 col-form-label">6) નોંધ</label>
             <div class="col-sm-10">
               <textarea
                 class="form-control"
@@ -103,13 +103,13 @@
 
           <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
             <div class="col-6 col-md-2">
-              <button class="btn btn-primary w-100 submit-button" type="button" data-category="ગ્રાહક મિત્રો">
-                ગ્રાહક મિત્રો
+              <button class="btn btn-primary w-100 submit-button" type="button" data-category="રીટેલર કસ્મર">
+               રીટેલર કસ્મર
               </button>
             </div>
             <div class="col-6 col-md-2">
-              <button class="btn btn-primary w-100 submit-button" type="button" data-category="મિત્રો">
-                મિત્રો
+              <button class="btn btn-primary w-100 submit-button" type="button" data-category=" હોલસેલ કસ્ટમર">
+              હોલસેલ કસ્ટમર 
               </button>
             </div>
             <div class="col-6 col-md-2">
@@ -118,18 +118,18 @@
               </button>
             </div>
             <div class="col-6 col-md-2">
-              <button class="btn btn-primary w-100 submit-button" type="button" data-category="સાગમટે">
-                સાગમટે
+              <button class="btn btn-primary w-100 submit-button" type="button" data-category="મિત્રો">
+              મિત્રો
               </button>
             </div>
             <div class="col-6 col-md-2">
-              <button class="btn btn-primary w-100 submit-button" type="button" data-category="કન્દોય">
-                કન્દોય
+              <button class="btn btn-primary w-100 submit-button" type="button" data-category="ટ્રાન્સપોર્ટર">
+              ટ્રાન્સપોર્ટર 
               </button>
             </div>
             <div class="col-6 col-md-2">
-              <button class="btn btn-primary w-100 submit-button" type="button" data-category="વેપારી/ગ્રાહકો">
-                વેપારી/ગ્રાહકો
+              <button class="btn btn-primary w-100 submit-button" type="button" data-category="ધાર્મિક સંસ્થા">
+              ધાર્મિક સંસ્થા
               </button>
             </div>
             <div class="col-6 col-md-2">
@@ -143,23 +143,23 @@
               </button>
             </div>
             <div class="col-6 col-md-2">
-              <button class="btn btn-primary w-100 submit-button" type="button" data-category="વાહન + મજુર">
-                વાહન + મજુર
+              <button class="btn btn-primary w-100 submit-button" type="button" data-category="કેટરર્સ">
+              કેટરર્સ 
               </button>
             </div>
             <div class="col-6 col-md-2">
-              <button class="btn btn-primary w-100 submit-button" type="button" data-category="ધાર્મિક + સંસ્થા">
-                ધાર્મિક + સંસ્થા
+              <button class="btn btn-primary w-100 submit-button" type="button" data-category="મજુર">
+              મજુર
+              </button>
+            </div>
+            <div class="col-6 col-md-2">
+              <button class="btn btn-primary w-100 submit-button" type="button" data-category="બ્રોકર્સ">
+              બ્રોકર્સ 
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="જનરલ">
-                જનરલ
-              </button>
-            </div>
-            <div class="col-6 col-md-2">
-              <button class="btn btn-primary w-100 submit-button" type="button" data-category="અન્ય">
-                અન્ય
+              જનરલ 
               </button>
             </div>
           </div>
@@ -176,13 +176,13 @@
             <div class="col-6">
               <div class="row g-2">
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ગ્રાહક%20મિત્રો'">
-                    ગ્રાહક મિત્રો
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=રીટેલર%20કસ્મર'">
+                  રીટેલર કસ્મર
                   </button>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
-                    મિત્રો
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=હોલસેલ%20કસ્ટમર'">
+                  હોલસેલ કસ્ટમર
                   </button>
                 </div>
                 <div class="col-12">
@@ -191,18 +191,18 @@
                   </button>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સાગમટે'">
-                    સાગમટે
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
+                  મિત્રો
                   </button>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કન્દોય'">
-                    કન્દોય
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ટ્રાન્સપોર્ટર'">
+                  ટ્રાન્સપોર્ટર
                   </button>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=વેપારી/ગ્રાહકો'">
-                    વેપારી/ગ્રાહકો
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20+%20સંસ્થા'">
+                  ધાર્મિક સંસ્થા
                   </button>
                 </div>
               </div>
@@ -220,23 +220,23 @@
                   </button>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=વાહન%20+%20મજુર'">
-                    વાહન + મજુર
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કેટરર્સ'">
+                  કેટરર્સ
                   </button>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20+%20સંસ્થા'">
-                    ધાર્મિક + સંસ્થા
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મજુર'">
+                  મજુર
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=બ્રોકર્સ'">
+                  બ્રોકર્સ
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=જનરલ'">
-                    જનરલ
-                  </button>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=અન્ય'">
-                    અન્ય
+                  જનરલ  
                   </button>
                 </div>
               </div>
