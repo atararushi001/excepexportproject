@@ -5,13 +5,16 @@
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     rel="stylesheet" />
-    <style>
+  <style>
     body {
-      background-color: #006ff83b; /* Light goldenrod color */
+      background-color: #006ff83b;
+      /* Light goldenrod color */
     }
-    input{
+
+    input {
       background-color: white;
     }
+
   </style>
 </head>
 
@@ -22,7 +25,7 @@
       <h2 class="display-2">એડ્રેસ બુક </h2>
     </div>
   </section>
-  <div class="container my-4">
+  <div class="p-4 my-4">
     <div class="row">
       <div class="col-md-9">
         <form id="form" method="POST">
@@ -56,9 +59,8 @@
                 class="form-control"
                 type="text"
                 placeholder="Name"
-                name="clientname" 
-                required
-                />
+                name="clientname"
+                required />
             </div>
           </div>
 
@@ -69,9 +71,8 @@
                 class="form-control"
                 type="text"
                 placeholder="city"
-                name="city" 
-                required
-                />
+                name="city"
+                required />
             </div>
           </div>
 
@@ -104,62 +105,62 @@
           <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="રીટેલર કસ્મર">
-               રીટેલર કસ્મર
+                1) રીટેલર કસ્મર
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category=" હોલસેલ કસ્ટમર">
-              હોલસેલ કસ્ટમર 
+                2) હોલસેલ કસ્ટમર
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="સબંધી">
-                સબંધી
+                3) સબંધી
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="મિત્રો">
-              મિત્રો
+                4) મિત્રો
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="ટ્રાન્સપોર્ટર">
-              ટ્રાન્સપોર્ટર 
+                5) ટ્રાન્સપોર્ટર
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="ધાર્મિક સંસ્થા">
-              ધાર્મિક સંસ્થા
+                6) ધાર્મિક સંસ્થા
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="ખરીદ વેપારી">
-                ખરીદ વેપારી
+                7) ખરીદ વેપારી
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="સેલ્સમેન">
-                સેલ્સમેન
+                8) સેલ્સમેન
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="કેટરર્સ">
-              કેટરર્સ 
+                9) કેટરર્સ
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="મજુર">
-              મજુર
+                10) મજુર
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="બ્રોકર્સ">
-              બ્રોકર્સ 
+                11) બ્રોકર્સ
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="જનરલ">
-              જનરલ 
+                12) જનરલ
               </button>
             </div>
           </div>
@@ -169,7 +170,7 @@
         <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
           <div class="col-12">
             <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php'">
-              view all
+              13) view all
             </button>
           </div>
           <div class="row g-2">
@@ -177,32 +178,32 @@
               <div class="row g-2">
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=રીટેલર%20કસ્મર'">
-                  રીટેલર કસ્મર
+                    1) રીટેલર કસ્મર
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=હોલસેલ%20કસ્ટમર'">
-                  હોલસેલ કસ્ટમર
+                    2) હોલસેલ કસ્ટમર
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સબંધી'">
-                    સબંધી
+                    3) સબંધી
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
-                  મિત્રો
+                    4) મિત્રો
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ટ્રાન્સપોર્ટર'">
-                  ટ્રાન્સપોર્ટર
+                    5) ટ્રાન્સપોર્ટર
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20+%20સંસ્થા'">
-                  ધાર્મિક સંસ્થા
+                    6) ધાર્મિક સંસ્થા
                   </button>
                 </div>
               </div>
@@ -211,32 +212,32 @@
               <div class="row g-2">
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ખરીદ%20વેપારી'">
-                    ખરીદ વેપારી
+                    7) ખરીદ વેપારી
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સેલ્સમેન'">
-                    સેલ્સમેન
+                    8) સેલ્સમેન
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કેટરર્સ'">
-                  કેટરર્સ
+                    9) કેટરર્સ
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મજુર'">
-                  મજુર
+                    10) મજુર
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=બ્રોકર્સ'">
-                  બ્રોકર્સ
+                    11) બ્રોકર્સ
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=જનરલ'">
-                  જનરલ  
+                    12) જનરલ
                   </button>
                 </div>
               </div>
@@ -260,7 +261,7 @@
           if (validateForm()) {
             submitForm();
           }
-         
+
         });
       });
 
@@ -290,7 +291,7 @@
       }
 
       function submitForm() {
-        
+
         document.getElementById("message").textContent = "Submitting..";
         document.getElementById("message").style.display = "block";
 
@@ -356,6 +357,7 @@
             });
           });
       }
+
       function validateForm() {
         var form = document.getElementById("form");
         if (form.checkValidity() === false) {

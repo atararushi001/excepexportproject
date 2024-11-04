@@ -31,13 +31,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $clientName = $_POST['clientname'] ?? '';
     $clientAddress = $_POST['clientaddress'] ?? '';
     $whatsappNumber = $_POST['whatsappnumber'] ?? '';
+    $city = $_POST['city'] ?? '';
     $mobileNumber = $_POST['mobilenumber'] ?? '';
     $notes = $_POST['Notes'] ?? '';
     $category = $_POST['category'] ?? '';
 
     // Prepare and bind
-    $stmt = $conn->prepare("INSERT INTO general (client_name, client_address, whatsapp_number, mobile_number, notes, category) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $clientName, $clientAddress, $whatsappNumber, $mobileNumber, $notes, $category);
+    $stmt = $conn->prepare("INSERT INTO general (client_name, client_address,city, whatsapp_number, mobile_number, notes, category) VALUES (?, ?, ?, ?, ? , ?, ?)");
+    $stmt->bind_param("sssssss", $clientName, $clientAddress,  $city, $whatsappNumber, $mobileNumber, $notes, $category);
 
     // Execute the statement
     if ($stmt->execute()) {
@@ -67,7 +68,7 @@ function fetchData() {
 
     header('Content-Type: application/json');
 
-    $sql = "SELECT id, client_name AS clientname, client_address AS clientaddress, whatsapp_number AS whatsappnumber, mobile_number AS mobilenumber, notes AS Notes, category FROM general";
+    $sql = "SELECT id, client_name AS clientname, client_address AS clientaddress, whatsapp_number AS whatsappnumber, mobile_number AS mobilenumber, notes AS Notes, category,city AS city FROM general";
     $result = $conn->query($sql);
 
     $data = array();
