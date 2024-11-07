@@ -97,9 +97,9 @@ function fetchData() {
 }
 
 function isDuplicateMobileNumber($mobileNumber, $conn) {
-    $sql = "SELECT COUNT(*) FROM general WHERE mobile_number = ?";
+    $sql = "SELECT COUNT(*) FROM general WHERE mobile_number = ? OR whatsapp_number = ? ";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $mobileNumber);
+    $stmt->bind_param("ss", $mobileNumber,$mobileNumber);
     $stmt->execute();
     $stmt->bind_result($count);
     $stmt->fetch();
@@ -107,9 +107,9 @@ function isDuplicateMobileNumber($mobileNumber, $conn) {
     return $count > 0;
 }
 function isDuplicateWhatsAppNumber($whatsappNumber, $conn) {
-    $sql = "SELECT COUNT(*) FROM general WHERE whatsapp_number = ?";
+    $sql = "SELECT COUNT(*) FROM general WHERE whatsapp_number = ? OR mobile_number = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $whatsappNumber);
+    $stmt->bind_param("ss", $whatsappNumber,$whatsappNumber);
     $stmt->execute();
     $stmt->bind_result($count);
     $stmt->fetch();

@@ -20,11 +20,10 @@
 
 <body>
   <section class="bg-primary text-white text-center py-2">
-    <div class="container">
-      <!-- <h1 class="display-2">જનરલ ક્રમાંક ચાર્ટ</h1> -->
-      <h2 class="display-2">એડ્રેસ બુક </h2>
-    </div>
-  </section>
+      <div class="container">
+        <h2> Address Book</h2>
+      </div>
+    </section>
   <div class="p-4 my-4">
     <div class="row">
       <div class="col-md-9">
