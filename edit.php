@@ -145,7 +145,7 @@
         <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
           <div class="col-12">
             <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php'">
-              13) view all
+              view all (13)
             </button>
           </div>
           <div class="row g-2">
@@ -153,32 +153,32 @@
               <div class="row g-2">
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=રીટેલર%20કસ્મર'">
-                    1) રીટેલર કસ્મર
+                     રીટેલર કસ્મર (1)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=હોલસેલ%20કસ્ટમર'">
-                    2) હોલસેલ કસ્ટમર
+                     હોલસેલ કસ્ટમર (2)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સબંધી'">
-                    3) સબંધી
+                     સબંધી (3)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
-                    4) મિત્રો
+                     મિત્રો (4)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ટ્રાન્સપોર્ટર'">
-                    5) ટ્રાન્સપોર્ટર
+                     ટ્રાન્સપોર્ટર (5)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20+%20સંસ્થા'">
-                    6) ધાર્મિક સંસ્થા
+                     ધાર્મિક સંસ્થા (6)
                   </button>
                 </div>
               </div>
@@ -187,32 +187,32 @@
               <div class="row g-2">
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ખરીદ%20વેપારી'">
-                    7) ખરીદ વેપારી
+                     ખરીદ વેપારી (7)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સેલ્સમેન'">
-                    8) સેલ્સમેન
+                     સેલ્સમેન (8)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કેટરર્સ'">
-                    9) કેટરર્સ
+                     કેટરર્સ (9)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મજુર'">
-                    10) મજુર
+                     મજુર (10)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=બ્રોકર્સ'">
-                    11) બ્રોકર્સ
+                    બ્રોકર્સ (11)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=જનરલ'">
-                    12) જનરલ
+                    જનરલ (12)
                   </button>
                 </div>
               </div>

@@ -87,8 +87,6 @@
             </div>
           </div>
 
-
-
           <div class="mb-3 row">
             <label class="col-sm-2 col-form-label">6) નોંધ</label>
             <div class="col-sm-10">
@@ -105,62 +103,63 @@
           <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="રીટેલર કસ્મર">
-                1) રીટેલર કસ્મર
+                 રીટેલર કસ્મર (1)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category=" હોલસેલ કસ્ટમર">
-                2) હોલસેલ કસ્ટમર
+                 હોલસેલ કસ્ટમર (2)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="સબંધી">
-                3) સબંધી
+                 સબંધી (3)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="મિત્રો">
-                4) મિત્રો
+                 મિત્રો (4)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="ટ્રાન્સપોર્ટર">
-                5) ટ્રાન્સપોર્ટર
+                 ટ્રાન્સપોર્ટર (5)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="ધાર્મિક સંસ્થા">
-                6) ધાર્મિક સંસ્થા
+                 ધાર્મિક સંસ્થા (6)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="ખરીદ વેપારી">
-                7) ખરીદ વેપારી
+                 ખરીદ વેપારી (7)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="સેલ્સમેન">
-                8) સેલ્સમેન
+                 સેલ્સમેન (8)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="કેટરર્સ">
-                9) કેટરર્સ
+                 કેટરર્સ (9)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="મજુર">
-                10) મજુર
+              મજુર (10)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="બ્રોકર્સ">
-                11) બ્રોકર્સ
+                બ્રોકર્સ (11)
               </button>
             </div>
             <div class="col-6 col-md-2">
               <button class="btn btn-primary w-100 submit-button" type="button" data-category="જનરલ">
-                12) જનરલ
+                જનરલ (12
+                )
               </button>
             </div>
           </div>
@@ -170,7 +169,7 @@
         <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
           <div class="col-12">
             <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php'">
-              13) view all
+             view all (13)
             </button>
           </div>
           <div class="row g-2">
@@ -178,32 +177,32 @@
               <div class="row g-2">
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=રીટેલર%20કસ્મર'">
-                    1) રીટેલર કસ્મર
+                   રીટેલર કસ્મર (1)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=હોલસેલ%20કસ્ટમર'">
-                    2) હોલસેલ કસ્ટમર
+                     હોલસેલ કસ્ટમર (2)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સબંધી'">
-                    3) સબંધી
+                    સબંધી (3)  
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
-                    4) મિત્રો
+                    મિત્રો (4)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ટ્રાન્સપોર્ટર'">
-                    5) ટ્રાન્સપોર્ટર
+                  ટ્રાન્સપોર્ટર (5)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20+%20સંસ્થા'">
-                    6) ધાર્મિક સંસ્થા
+                    ધાર્મિક સંસ્થા (6)
                   </button>
                 </div>
               </div>
@@ -212,32 +211,32 @@
               <div class="row g-2">
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ખરીદ%20વેપારી'">
-                    7) ખરીદ વેપારી
+                  ખરીદ વેપારી (7)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સેલ્સમેન'">
-                    8) સેલ્સમેન
+                  સેલ્સમેન (8)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કેટરર્સ'">
-                    9) કેટરર્સ
+                   કેટરર્સ  (9)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મજુર'">
-                    10) મજુર
+                   મજુર (10)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=બ્રોકર્સ'">
-                    11) બ્રોકર્સ
+                    બ્રોકર્સ (11)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=જનરલ'">
-                    12) જનરલ
+                    જનરલ (12)
                   </button>
                 </div>
               </div>
@@ -269,11 +268,15 @@
         checkDuplicateMobileNumber(this.value);
       });
 
+      document.querySelector("input[name='whatsappnumber']").addEventListener("blur", function() {
+        checkDuplicateWhatsAppNumber(this.value);
+      });
+
       function checkDuplicateMobileNumber(mobileNumber) {
         fetch("./include/function.php", {
             method: "POST",
             body: new URLSearchParams({
-              action: 'check_duplicate',
+              action: 'check_duplicate_mobile',
               mobilenumber: mobileNumber
             }),
             headers: {
@@ -285,6 +288,27 @@
             if (data.status === 'error') {
               alert(data.message);
               document.querySelector("input[name='mobilenumber']").value = '';
+            }
+          })
+          .catch(error => console.error('Error:', error));
+      }
+
+      function checkDuplicateWhatsAppNumber(whatsappNumber) {
+        fetch("./include/function.php", {
+            method: "POST",
+            body: new URLSearchParams({
+              action: 'check_duplicate_whatsapp',
+              whatsappnumber: whatsappNumber
+            }),
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+            },
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.status === 'error') {
+              alert(data.message);
+              document.querySelector("input[name='whatsappnumber']").value = '';
             }
           })
           .catch(error => console.error('Error:', error));

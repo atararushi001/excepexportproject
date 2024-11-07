@@ -16,16 +16,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conn->close();
         exit;
     }
-    if (isset($_POST['action']) && $_POST['action'] == 'check_duplicate') {
-        $mobileNumber = $_POST['mobilenumber'];
-        if (isDuplicateMobileNumber($mobileNumber, $conn)) {
-            echo json_encode(['status' => 'error', 'message' => 'Duplicate mobile number.']);
-        } else {
-            echo json_encode(['status' => 'success', 'message' => 'Mobile number is unique.']);
-        }
-        $conn->close();
-        exit;
-    }
+    // if (isset($_POST['action']) && $_POST['action'] == 'check_duplicate') {
+        if ($_POST['action'] == 'check_duplicate_mobile') {
+                $mobileNumber = $_POST['mobilenumber'];
+                if (isDuplicateMobileNumber($mobileNumber, $conn)) {
+                    echo json_encode(['status' => 'error', 'message' => 'Duplicate mobile number.']);
+                } else {
+                    echo json_encode(['status' => 'success', 'message' => 'Mobile number is unique.']);
+                }
+                $conn->close();
+                exit;
+            } 
+        if ($_POST['action'] == 'check_duplicate_whatsapp') {
+                $whatsappNumber = $_POST['whatsappnumber'];
+                if (isDuplicateWhatsAppNumber($whatsappNumber, $conn)) {
+                    echo json_encode(['status' => 'error', 'message' => 'Duplicate WhatsApp number.']);
+                } else {
+                    echo json_encode(['status' => 'success', 'message' => 'WhatsApp number is unique.']);
+                }
+                $conn->close();
+                exit;
+            }
+        
 
     // Existing code for inserting data
     $clientName = $_POST['clientname'] ?? '';
@@ -94,8 +106,19 @@ function isDuplicateMobileNumber($mobileNumber, $conn) {
     $stmt->close();
     return $count > 0;
 }
+function isDuplicateWhatsAppNumber($whatsappNumber, $conn) {
+    $sql = "SELECT COUNT(*) FROM general WHERE whatsapp_number = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $whatsappNumber);
+    $stmt->execute();
+    $stmt->bind_result($count);
+    $stmt->fetch();
+    $stmt->close();
+    return $count > 0;
+}
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     fetchData();
 }
+
 
 ?>

@@ -2,18 +2,10 @@
 <html>
 
 <head>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet" />
-  <link
-    href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"
-    rel="stylesheet" />
-  <link
-    href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.bootstrap5.min.css"
-    rel="stylesheet" />
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+  <link href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <style>
     .button-container {
       display: flex;
@@ -32,7 +24,6 @@
 
     table {
       background-color: white;
-
     }
   </style>
 </head>
@@ -68,40 +59,45 @@
         <div class="row g-2" style="background-color: white; padding-bottom: .70rem; border-radius: .25rem;">
           <div class="col-12">
             <button class="btn btn-primary w-100" type="button" onclick="window.location.href='index.php'">
-              13) ડેટા ઉમેરો
+              ડેટા ઉમેરો (13)
+            </button>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php'">
+            view all (14)
             </button>
           </div>
           <div class="row g-2">
             <div class="col-6">
               <div class="row g-2">
                 <div class="col-12">
-                  <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=રીટેલર%20કસ્મર'">
-                    1) રીટેલર કસ્મર
+                  <button class="btn btn-primary w-100 " type="button" onclick="window.location.href='cetagory-list-data.php?category=રીટેલર%20કસ્મર'">
+                    રીટેલર કસ્મર (1) 
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=હોલસેલ%20કસ્ટમર'">
-                    2) હોલસેલ કસ્ટમર
+                    હોલસેલ કસ્ટમર (2)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સબંધી'">
-                    3) સબંધી
+                    સબંધી (3)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મિત્રો'">
-                    4) મિત્રો
+                    મિત્રો (4)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ટ્રાન્સપોર્ટર'">
-                    5) ટ્રાન્સપોર્ટર
+                     ટ્રાન્સપોર્ટર (5)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ધાર્મિક%20સંસ્થા'">
-                    6) ધાર્મિક સંસ્થા
+                     ધાર્મિક સંસ્થા (6)
                   </button>
                 </div>
               </div>
@@ -110,32 +106,32 @@
               <div class="row g-2">
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=ખરીદ%20વેપારી'">
-                    7) ખરીદ વેપારી
+                    ખરીદ વેપારી (7)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=સેલ્સમેન'">
-                    8) સેલ્સમેન
+                   સેલ્સમેન (8)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=કેટરર્સ'">
-                    9) કેટરર્સ
+                    કેટરર્સ (9)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=મજુર'">
-                    10) મજુર
+                     મજુર (10)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=બ્રોકર્સ'">
-                    11) બ્રોકર્સ
+                     બ્રોકર્સ (11)
                   </button>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="button" onclick="window.location.href='cetagory-list-data.php?category=જનરલ'">
-                    12) જનરલ
+                  જનરલ (12)
                   </button>
                 </div>
               </div>
@@ -172,6 +168,9 @@
       var table = $('#dataTable').DataTable({
         "ajax": {
           "url": "./include/function.php",
+          "data": function(d) {
+            d.category = $('#category-input').val();
+          },
           "dataSrc": "data"
         },
         "columns": [{
@@ -183,7 +182,6 @@
           {
             "data": "city"
           },
-        
           {
             "data": "whatsappnumber"
           },
@@ -213,7 +211,7 @@
       $.fn.dataTable.ext.search.push(
         function(settings, data, dataIndex) {
           var category = $('#category-input').val();
-          var rowCategory = data[5]; // Use data for the category column
+          var rowCategory = data[6]; // Use data for the category column
 
           if (category === "" || rowCategory === category) {
             return true;
