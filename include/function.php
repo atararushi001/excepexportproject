@@ -17,26 +17,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
     // if (isset($_POST['action']) && $_POST['action'] == 'check_duplicate') {
-        if ($_POST['action'] == 'check_duplicate_mobile') {
-                $mobileNumber = $_POST['mobilenumber'];
-                if (isDuplicateMobileNumber($mobileNumber, $conn)) {
-                    echo json_encode(['status' => 'error', 'message' => 'Duplicate mobile number.']);
-                } else {
-                    echo json_encode(['status' => 'success', 'message' => 'Mobile number is unique.']);
-                }
-                $conn->close();
-                exit;
-            } 
-        if ($_POST['action'] == 'check_duplicate_whatsapp') {
-                $whatsappNumber = $_POST['whatsappnumber'];
-                if (isDuplicateWhatsAppNumber($whatsappNumber, $conn)) {
-                    echo json_encode(['status' => 'error', 'message' => 'Duplicate WhatsApp number.']);
-                } else {
-                    echo json_encode(['status' => 'success', 'message' => 'WhatsApp number is unique.']);
-                }
-                $conn->close();
-                exit;
+        if (isset($_POST['action']) && $_POST['action'] == 'add_city') {
+            $city = $_POST['city'];
+            addCity($city);
+        } elseif (isset($_POST['action']) && $_POST['action'] == 'check_duplicate_mobile') {
+            $mobileNumber = $_POST['mobilenumber'];
+            if (isDuplicateMobileNumber($mobileNumber, $conn)) {
+                echo json_encode(['status' => 'error', 'message' => 'Duplicate mobile number.']);
+            } else {
+                echo json_encode(['status' => 'success', 'message' => 'Mobile number is unique.']);
             }
+            $conn->close();
+            exit;
+        } elseif (isset($_POST['action']) && $_POST['action'] == 'check_duplicate_whatsapp') {
+            $whatsappNumber = $_POST['whatsappnumber'];
+            if (isDuplicateWhatsAppNumber($whatsappNumber, $conn)) {
+                echo json_encode(['status' => 'error', 'message' => 'Duplicate WhatsApp number.']);
+            } else {
+                echo json_encode(['status' => 'success', 'message' => 'WhatsApp number is unique.']);
+            }
+            $conn->close();
+            exit;
+        }
         
 
     // Existing code for inserting data
@@ -73,6 +75,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Content-Type: application/json');
     echo json_encode($response);
     exit;
+}
+function fetchCities() {
+    global $conn;
+    $sql = "SELECT city_name FROM city";
+    $result = $conn->query($sql);
+
+    $cities = [];
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $cities[] = $row['city_name'];
+        }
+    }
+
+    echo json_encode($cities);
+    $conn->close();
+}
+
+function addCity($city) {
+    global $conn;
+    $sql = "INSERT INTO city (city_name) VALUES (?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $city);
+    if ($stmt->execute()) {
+        echo "City added successfully";
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+    $stmt->close();
+    $conn->close();
 }
 
 function fetchData() {
@@ -117,8 +148,11 @@ function isDuplicateWhatsAppNumber($whatsappNumber, $conn) {
     return $count > 0;
 }
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    fetchData();
+    if (isset($_GET['action']) && $_GET['action'] == 'fetch_cities') {
+        fetchCities();
+    } else {
+        fetchData();
+    }
 }
-
 
 ?>
